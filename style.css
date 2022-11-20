@@ -1,0 +1,120 @@
+.container{
+    display: grid;
+    height: auto;
+    padding-top: 72px;
+    padding-bottom:48px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 
+    1.2fr 1.2fr 1.2fr 0.2fr ;
+    grid-template-areas: 
+    "content1 content2 content3"
+    "content4 content5 content6"
+    "content7 content8 content9"
+    "audio1 audio1 audio1";
+    grid-gap: 5px;
+    background-image:linear-gradient(120deg, orange,white,green);
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: 24pt;
+    background-image: linear-gradient(orange,white,green);
+    color: blue;
+    height:auto;
+    padding: 6pt;
+    text-align: center;
+}
+#content1{
+    grid-area:content1;
+}
+#content2{
+    grid-area:content2;
+}
+#content3{
+    grid-area:content3;
+}
+#content4{
+    grid-area:content4;
+}
+#content5{
+    grid-area:content5;
+}
+#content6{
+    grid-area:content6;
+}
+#content7{
+    grid-area:content7;
+}
+#content8{
+    grid-area:content8;
+}
+#content9{  
+    grid-area:content9;
+}
+#audio1{
+    align-items: center;
+    grid-area: audio1;
+}
+footer{
+    background-color: aqua;
+    position: fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    font-size: 14pt;
+    background-image: linear-gradient(orange,white,green);
+    color: blue;
+    height:auto;
+    padding: 6pt;
+}
+h5 {
+    width: 90%;
+    height: auto;
+    font-size: 14pt;
+    background-image: linear-gradient(120deg, aqua,skyblue,lightpink);
+    border-radius: 10px;
+    border: solid rgb(104, 18, 104);
+    margin:5px;
+    color:black;
+}
+img{
+    border: solid black;
+    border-radius: 10px;
+}
+a{
+    text-decoration: none;
+}
+@media only screen and (max-width: 850px){
+    .container{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 0.2fr;
+        grid-template-areas:
+        "content1 content2"
+        "content3 content4"
+        "content5 content6"
+        "content7 content8"
+        "content9 content9"
+        "audio1 audio1";
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.2fr;
+        grid-template-areas: 
+        "content1"
+        "content2"
+        "content3"
+        "content4"
+        "content5"
+        "content6"
+        "content7"
+        "content8"
+        "content9"
+        "audio1";
+    }
+    
+}
